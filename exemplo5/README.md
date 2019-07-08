@@ -35,3 +35,15 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved)
     return JNI_VERSION_1_6;
 }
 ```
+
+```java
+jclass contextClass = env->FindClass("android/content/Context");
+jfieldID fieldID = env->GetStaticFieldID(contextClass, "MODE_PRIVATE", "I");
+jint mpFv = (jint) env->GetStaticIntField(contextClass, fieldID);
+
+jstring _payload_dex = env->NewStringUTF("payload_dex");
+
+jclass appClass = env->FindClass("android/app/Application");
+jmethodID methodID = env->GetMethodID(appClass, "getDir", "(Ljava/lang/String;I)Ljava/io/File;");
+jobject dex = env->CallObjectMethod(obj, dirMd, _payload_dex, mpFv); //obj是Application对象，传进来的
+```
