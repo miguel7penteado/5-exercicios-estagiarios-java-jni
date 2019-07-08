@@ -45,5 +45,6 @@ jstring _payload_dex = env->NewStringUTF("payload_dex");
 
 jclass appClass = env->FindClass("android/app/Application");
 jmethodID methodID = env->GetMethodID(appClass, "getDir", "(Ljava/lang/String;I)Ljava/io/File;");
-jobject dex = env->CallObjectMethod(obj, dirMd, _payload_dex, mpFv); //obj是Application对象，传进来的
+jobject dex = env->CallObjectMethod(obj, dirMd, _payload_dex, mpFv); 
+
 ```
