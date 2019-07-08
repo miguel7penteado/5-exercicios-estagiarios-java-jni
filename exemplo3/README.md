@@ -1,5 +1,7 @@
 # 1 - Exemplo 3
 
+Aqui o JAVA chama um método nativo em C++, porém, o método c++ chama de volta métodos JAVA (Callback), demonstrando que é possível chamar métodos existentes nas 2 plataformas pelas duas plataformas durante a execução.
+
 # 2 - Compilando
 
 java 7 e anteriores:
