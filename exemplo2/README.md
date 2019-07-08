@@ -1,5 +1,7 @@
 # 1 - Exemplo 2
 
+Neste exemplo, fazemos o java evocar uma biblioteca C++ para fazer a soma ordinária de 2 números.
+
 # 2 - Compilando
 
 java 7 e anteriores:
