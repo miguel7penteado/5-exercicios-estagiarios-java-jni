@@ -12,6 +12,7 @@ public class ClassePrincipal
 	  ClassePrincipal objeto1;
 	  objeto1 = new ClassePrincipal();
 	  System.out.println("Evocando código c++ daqui em diante...");
-      objeto1.cumprimentos();
+	  objeto1.cumprimentos();
+	  delete objeto1;   
    };
 }
