@@ -1,7 +1,7 @@
 
 # JNI - Interface Java Nativa C++
 
-
+```
 Equivalencia de tipos primitivos:
 ========================+
 |    CPP    |    JAVA   |
@@ -22,6 +22,7 @@ Equivalencia de tipos primitivos:
 +-----------+-----------+
 |  jboolean |   boolean |
 +-----------+-----------+
+
 
 Equivalência para Classes:
 ========================================+
@@ -185,15 +186,4 @@ Mapeamento de Tipos vetores
 +--------------------------------------------------------------------------------------------------------------------------------+
 | void         ReleasePrimitiveArrayCritical(JNIEnv *env, jarray array, void *carray, jint mode);                                |
 +--------------------------------------------------------------------------------------------------------------------------------+
-
-
-
-
-
-
-
-
-
-
-
-
+```
