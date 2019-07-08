@@ -48,3 +48,5 @@ jmethodID methodID = env->GetMethodID(appClass, "getDir", "(Ljava/lang/String;I)
 jobject dex = env->CallObjectMethod(obj, dirMd, _payload_dex, mpFv); 
 
 ```
+fonte: [https://mccxj.github.io/blog/20151028_android-ndk-jni.html](https://mccxj.github.io/blog/20151028_android-ndk-jni.html)
+
